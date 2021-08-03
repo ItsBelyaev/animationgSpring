@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myView: SpringView!
     @IBOutlet weak var animationLabel: UILabel!
     
-    var animationToUse = "shake"
+    var pickedAnimation = Animation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +22,15 @@ class ViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        animationLabel.text = animationToUse
+        animationLabel.text = "Animation: \(pickedAnimation.name) \nCurve: \(pickedAnimation.curve) \nForce: \(pickedAnimation.force)\nDuration: \(pickedAnimation.duration)"
 
     }
 
     @IBAction func runAnimationgButtonPressed(_ sender: SpringButton) {
-        myView.animation = animationLabel.text ?? "shake"
-        myView.curve = "easeInOut"
-        myView.force = 2
-        myView.duration = 2
+        myView.animation = pickedAnimation.name
+        myView.curve = pickedAnimation.curve
+        myView.force = CGFloat(pickedAnimation.force)
+        myView.duration = CGFloat(pickedAnimation.duration)
         myView.delay = 0.2
         
         myView.animate()
@@ -38,15 +38,5 @@ class ViewController: UIViewController {
         sender.animation = "pop"
         sender.duration = 0.5
         sender.animate()
-        
-        print(animationToUse)
-        guard let animation = animationLabel.text else {return}
-        print(animation)
-        
     }
-    
-    @IBAction func editButtonPressed(_ sender: UIBarButtonItem) {
-        
-    }
-
 }

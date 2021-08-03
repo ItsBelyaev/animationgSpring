@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6D83BA555D24EF6638E5B3CB /* Pods_StringHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2B27A79C8BD663FE28DF3 /* Pods_StringHomework.framework */; };
+		9ECA092D26B9CA7800ADD2C1 /* AnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA092C26B9CA7800ADD2C1 /* AnimationModel.swift */; };
+		9ECA092F26B9CACB00ADD2C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA092E26B9CACB00ADD2C1 /* DataManager.swift */; };
+		9ECA093126B9CE9A00ADD2C1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA093026B9CE9A00ADD2C1 /* SettingsViewController.swift */; };
 		9EEFA59326B9327100C78E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEFA59226B9327100C78E4E /* AppDelegate.swift */; };
 		9EEFA59526B9327100C78E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEFA59426B9327100C78E4E /* SceneDelegate.swift */; };
 		9EEFA59726B9327100C78E4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEFA59626B9327100C78E4E /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		3DA2B27A79C8BD663FE28DF3 /* Pods_StringHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StringHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B7314552DEF5F66CB492D2 /* Pods-StringHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringHomework.release.xcconfig"; path = "Target Support Files/Pods-StringHomework/Pods-StringHomework.release.xcconfig"; sourceTree = "<group>"; };
+		9ECA092C26B9CA7800ADD2C1 /* AnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModel.swift; sourceTree = "<group>"; };
+		9ECA092E26B9CACB00ADD2C1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9ECA093026B9CE9A00ADD2C1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9EEFA58F26B9327100C78E4E /* StringHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEFA59226B9327100C78E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EEFA59426B9327100C78E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +99,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9ECA092726B9CA2E00ADD2C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EEFA59626B9327100C78E4E /* ViewController.swift */,
+				9EEFA5C526B9368600C78E4E /* PickerViewController.swift */,
+				9ECA093026B9CE9A00ADD2C1 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9ECA092826B9CA3500ADD2C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EEFA59826B9327100C78E4E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9ECA092926B9CA4100ADD2C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9ECA092C26B9CA7800ADD2C1 /* AnimationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9ECA092A26B9CA4500ADD2C1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9ECA092E26B9CACB00ADD2C1 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9ECA092B26B9CA5000ADD2C1 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				9EEFA59E26B9327200C78E4E /* Assets.xcassets */,
+				9EEFA59426B9327100C78E4E /* SceneDelegate.swift */,
+				9EEFA59226B9327100C78E4E /* AppDelegate.swift */,
+				9EEFA59B26B9327100C78E4E /* StringHomework.xcdatamodeld */,
+				9EEFA5A026B9327200C78E4E /* LaunchScreen.storyboard */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
 		9EEFA58626B9327100C78E4E = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +170,12 @@
 		9EEFA59126B9327100C78E4E /* StringHomework */ = {
 			isa = PBXGroup;
 			children = (
-				9EEFA59226B9327100C78E4E /* AppDelegate.swift */,
-				9EEFA59426B9327100C78E4E /* SceneDelegate.swift */,
-				9EEFA59626B9327100C78E4E /* ViewController.swift */,
-				9EEFA5C526B9368600C78E4E /* PickerViewController.swift */,
-				9EEFA59826B9327100C78E4E /* Main.storyboard */,
-				9EEFA59E26B9327200C78E4E /* Assets.xcassets */,
-				9EEFA5A026B9327200C78E4E /* LaunchScreen.storyboard */,
+				9ECA092B26B9CA5000ADD2C1 /* Support files */,
+				9ECA092A26B9CA4500ADD2C1 /* Managers */,
+				9ECA092926B9CA4100ADD2C1 /* Models */,
+				9ECA092826B9CA3500ADD2C1 /* Views */,
+				9ECA092726B9CA2E00ADD2C1 /* Controllers */,
 				9EEFA5A326B9327200C78E4E /* Info.plist */,
-				9EEFA59B26B9327100C78E4E /* StringHomework.xcdatamodeld */,
 			);
 			path = StringHomework;
 			sourceTree = "<group>";
@@ -335,8 +384,11 @@
 				9EEFA5C626B9368600C78E4E /* PickerViewController.swift in Sources */,
 				9EEFA59726B9327100C78E4E /* ViewController.swift in Sources */,
 				9EEFA59326B9327100C78E4E /* AppDelegate.swift in Sources */,
+				9ECA092F26B9CACB00ADD2C1 /* DataManager.swift in Sources */,
 				9EEFA59D26B9327100C78E4E /* StringHomework.xcdatamodeld in Sources */,
+				9ECA092D26B9CA7800ADD2C1 /* AnimationModel.swift in Sources */,
 				9EEFA59526B9327100C78E4E /* SceneDelegate.swift in Sources */,
+				9ECA093126B9CE9A00ADD2C1 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
